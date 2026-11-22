@@ -13,7 +13,19 @@ $normalization = @(
   @{ Source = '01-city-walk.mp4'; Out = 'norm01.mp4' },
   @{ Source = '02-rainy-neon-reflections.mp4'; Out = 'norm02.mp4' },
   @{ Source = '03-elevated-train.mp4'; Out = 'norm03.mp4' },
-  @{ Source = '04-city-overlook.mp4'; Out = 'norm04.mp4' }
+  @{ Source = '04-city-overlook.mp4'; Out = 'norm04.mp4' },
+  @{ Source = '06-rainy-timelapse.mp4'; Out = 'norm06.mp4' },
+  @{ Source = '07-traffic-bokeh.mp4'; Out = 'norm07.mp4' },
+  @{ Source = '08-traffic-light-trails.mp4'; Out = 'norm08.mp4' },
+  @{ Source = '10-bridge-cityscape.mp4'; Out = 'norm10.mp4' },
+  @{ Source = '11-street-lamp.mp4'; Out = 'norm11.mp4' },
+  @{ Source = '12-skyline.mp4'; Out = 'norm12.mp4' },
+  @{ Source = '13-city-timelapse.mp4'; Out = 'norm13.mp4' },
+  @{ Source = '14-colorful-street.mp4'; Out = 'norm14.mp4' },
+  @{ Source = '15-long-city-train.mp4'; Out = 'norm15.mp4' },
+  @{ Source = '16-city-dusk-walk.mp4'; Out = 'norm16.mp4' },
+  @{ Source = '17-city-train-later.mp4'; Out = 'norm17.mp4' },
+  @{ Source = '18-city-train-final.mp4'; Out = 'norm18.mp4' }
 )
 
 foreach ($item in $normalization) {
@@ -25,9 +37,9 @@ foreach ($item in $normalization) {
 }
 
 $plans = @(
-  @{ Name = 'part1'; Order = @('norm01.mp4','norm02.mp4','norm03.mp4','norm04.mp4','norm01.mp4','norm02.mp4','norm03.mp4','norm04.mp4'); Filter = 'scale=1280:720,fps=30,format=yuv420p' },
-  @{ Name = 'part2'; Order = @('norm04.mp4','norm03.mp4','norm02.mp4','norm01.mp4','norm04.mp4','norm03.mp4','norm02.mp4','norm01.mp4'); Filter = 'scale=1280:720,fps=30,eq=contrast=1.08:brightness=-0.02:saturation=1.20,format=yuv420p' },
-  @{ Name = 'part3'; Order = @('norm02.mp4','norm03.mp4','norm01.mp4','norm04.mp4','norm02.mp4','norm04.mp4','norm03.mp4','norm01.mp4'); Filter = 'scale=1280:720,fps=30,hue=h=8:s=1.15,eq=contrast=1.05:brightness=-0.01,format=yuv420p' }
+  @{ Name = 'part1'; Order = @('norm16.mp4','norm01.mp4','norm11.mp4','norm12.mp4','norm06.mp4','norm10.mp4','norm08.mp4'); Filter = 'scale=1280:720,fps=30,format=yuv420p' },
+  @{ Name = 'part2'; Order = @('norm15.mp4','norm02.mp4','norm07.mp4','norm03.mp4','norm13.mp4','norm14.mp4'); Filter = 'scale=1280:720,fps=30,eq=contrast=1.08:brightness=-0.02:saturation=1.20,format=yuv420p' },
+  @{ Name = 'part3'; Order = @('norm17.mp4','norm04.mp4','norm18.mp4'); Filter = 'scale=1280:720,fps=30,hue=h=8:s=1.15,eq=contrast=1.05:brightness=-0.01,tpad=stop_mode=clone:stop_duration=3,trim=duration=60,format=yuv420p' }
 )
 
 $partFiles = @()

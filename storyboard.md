@@ -14,18 +14,18 @@
 
 | Time | Music | Visual treatment |
 | --- | --- | --- |
-| 00:00–00:20 | Ambient intro | Foggy city walk, long takes, title reveal |
-| 00:20–00:55 | Main groove enters | Walking silhouettes and city details, medium pacing |
-| 00:55–01:15 | Build-up | Rainy neon reflections, increasing cuts |
-| 01:15–01:55 | First drop | Neon streets and elevated train, fast montage |
-| 01:55–02:15 | Break | City overlook, slower motion and darker grade |
-| 02:15–02:50 | Final drop | Reverse montage order, brighter neon grade, denser cuts |
+| 00:00–00:20 | Ambient intro | Dusk city walk, long takes, title reveal |
+| 00:20–00:55 | Main groove enters | Street lamps, skyline, rain timelapse and bridge views |
+| 00:55–01:15 | Build-up | Traffic bokeh and light trails, increasing cuts |
+| 01:15–01:55 | First drop | Long city-night shot, neon reflections, elevated train and timelapse |
+| 01:55–02:15 | Break | Colorful street and city lights, slower motion and darker grade |
+| 02:15–02:50 | Final drop | Later city-night footage, overlook, final city movement |
 | 02:50–03:00 | Outro | City overlook and closing course credit |
 
 ## Asset order
 
 ```text
-01-city-walk → 02-rainy-neon-reflections → 03-elevated-train → 04-city-overlook
+16-city-dusk-walk → 01-city-walk → 11-street-lamp → 12-skyline → 06-rainy-timelapse → 10-bridge-cityscape → 08-traffic-light-trails → 15-long-city-train → 02-rainy-neon-reflections → 07-traffic-bokeh → 03-elevated-train → 13-city-timelapse → 14-colorful-street → 17-city-train-later → 04-city-overlook → 18-city-train-final
 ```
 
-The assets are reused with different orderings and restrained color variations so the three-minute structure feels intentional while keeping the original night-city theme consistent.
+Each source segment is used once in the revised cut. The only non-source extension is a short final freeze frame used to reach exactly 03:00.

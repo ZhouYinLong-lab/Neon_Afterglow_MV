@@ -23,6 +23,23 @@
 | `assets/03-elevated-train.mp4` | 过渡/高潮：高架列车经过城市 | [Pexels 原始页面](https://www.pexels.com/video/nighttime-cityscape-with-elevated-train-passing-36244116/) |
 | `assets/04-city-overlook.mp4` | 结尾：人物在桥上眺望城市 | [Pexels 原始页面](https://www.pexels.com/video/silhouettes-overlooking-city-at-night-36244092/) |
 
+为减少长片中的重复镜头，又补充了以下横屏素材。新版成片会将这些素材按时间线各使用一次：
+
+| 文件 | 画面内容 | 原始素材 |
+| --- | --- | --- |
+| `assets/06-rainy-timelapse.mp4` | 雨夜街道延时 | [Pexels](https://www.pexels.com/video/time-lapse-video-of-a-street-on-a-rainy-night-5108846/) |
+| `assets/07-traffic-bokeh.mp4` | 夜间车流光斑 | [Pexels](https://www.pexels.com/video/blurred-traffic-lights-on-a-city-highway-30233378/) |
+| `assets/08-traffic-light-trails.mp4` | 车流光轨 | [Pexels](https://www.pexels.com/video/dynamic-nighttime-city-traffic-light-trails-28709567/) |
+| `assets/10-bridge-cityscape.mp4` | 桥上城市景观 | [Pexels](https://www.pexels.com/video/cityscape-through-bridge-at-night-36244108/) |
+| `assets/11-street-lamp.mp4` | 街灯与建筑 | [Pexels](https://www.pexels.com/video/a-city-street-at-night-with-a-street-light-16657010/) |
+| `assets/12-skyline.mp4` | 城市天际线 | [Pexels](https://www.pexels.com/video/a-city-skyline-at-night-with-lights-on-18569318/) |
+| `assets/13-city-timelapse.mp4` | 城市桥梁延时 | [Pexels](https://www.pexels.com/video/timelapse-of-a-nighttime-city-scene-33078752/) |
+| `assets/14-colorful-street.mp4` | 彩色街区与商铺 | [Pexels](https://www.pexels.com/video/street-in-city-at-night-9956020/) |
+| `assets/15-long-city-train.mp4` | 城市夜景长镜头 | [Pexels](https://www.pexels.com/video/night-life-in-a-city-5683157/) |
+| `assets/16-city-dusk-walk.mp4` | 黄昏城市人群 | [Pexels](https://www.pexels.com/video/people-walk-down-a-street-in-a-city-at-dusk-20601998/) |
+| `assets/17-city-train-later.mp4` | 城市夜景后段 | [Pexels](https://www.pexels.com/video/night-life-in-a-city-5683157/) |
+| `assets/18-city-train-final.mp4` | 城市夜景尾段 | [Pexels](https://www.pexels.com/video/night-life-in-a-city-5683157/) |
+
 ## 成片文件
 
 - `audio/neon-afterglow-synthwave.mp3`：原创 Synthwave 配乐，180 秒
@@ -39,7 +56,7 @@
 01-city-walk → 02-rainy-neon-reflections → 03-elevated-train → 04-city-overlook
 ```
 
-建议将音乐的重拍、段落变化或高潮分别对应到雨夜霓虹和高架列车画面，结尾保留城市眺望镜头，形成“出发—穿行—情绪爆发—回望”的叙事闭环。
+建议将音乐的重拍、段落变化或高潮分别对应到雨夜霓虹、车流光轨和高架列车画面，结尾保留城市夜景，形成“黄昏出发—进入城市—情绪爆发—夜色收束”的叙事闭环。新版时间线尽量不重复同一素材，只在片尾使用约 2 秒定格补齐时长。
 
 ## 本地复现
 
