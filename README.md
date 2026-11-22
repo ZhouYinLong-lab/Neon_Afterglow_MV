@@ -6,7 +6,7 @@
 
 本仓库用于存放第二次作业的 MV 视频素材与制作文件。作业内容是为视频配上小组生成的音乐，使最终作品呈现音乐视频（Music Video，MV）的视听效果。
 
-当前仓库已经包含一首原创生成的 3 分钟 Synthwave 配乐和一版完整 MV 初稿。
+当前仓库已经包含一首原创生成的 3 分钟 Synthwave 配乐，以及纯音乐版和带人声版两种 MV 初稿。
 
 ## 作品方向
 
@@ -43,9 +43,13 @@
 ## 成片文件
 
 - `audio/neon-afterglow-synthwave.mp3`：原创 Synthwave 配乐，180 秒
+- `audio/neon-afterglow-vocal.mp3`：加入英文人声 Hook 的版本，180 秒
 - `output/neon-afterglow-mv.mp4`：完整 MV 初稿，180 秒，1280×720，30 FPS
+- `output/neon-afterglow-vocal-mv.mp4`：带人声的完整 MV 版本，180 秒
 - `storyboard.md`：分镜和时间线
 - `tools/generate_synthwave.js`：本地生成配乐的可复现脚本
+- `tools/generate_vocal.ps1`：生成英文人声短句
+- `tools/build_vocal_audio.ps1`：将人声与 Synthwave 配乐混音
 - `tools/render_mv.ps1`：视频素材整理、片头片尾和最终渲染脚本
 
 仓库内的视频是为便于剪辑而制作的 720p 短片段，已移除原始音轨；正式成片应使用小组生成的音乐作为主音轨。
@@ -58,6 +62,19 @@
 
 建议将音乐的重拍、段落变化或高潮分别对应到雨夜霓虹、车流光轨和高架列车画面，结尾保留城市夜景，形成“黄昏出发—进入城市—情绪爆发—夜色收束”的叙事闭环。新版时间线尽量不重复同一素材，只在片尾使用约 2 秒定格补齐时长。
 
+## 人声版本
+
+人声版本使用英文短句作为 Synthwave vocal hook，内容为：
+
+```text
+Neon afterglow.
+Running through the night.
+We are alive in the city lights.
+Do not look back.
+```
+
+人声在前奏、第一次高潮、间奏和最终高潮处依次出现，并加入延迟、混响和压缩，使其更接近 MV 中的氛围人声采样。
+
 ## 本地复现
 
 在 Windows 环境中，确保已安装 Node.js 和 FFmpeg，然后运行：
@@ -69,6 +86,13 @@ powershell -ExecutionPolicy Bypass -File tools/render_mv.ps1
 ```
 
 最终视频会生成在 `output/neon-afterglow-mv.mp4`。
+
+生成带人声版本：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools/build_vocal_audio.ps1
+powershell -ExecutionPolicy Bypass -File tools/render_mv.ps1 -AudioFile audio/neon-afterglow-vocal.mp3 -OutputFile output/neon-afterglow-vocal-mv.mp4
+```
 
 ## 素材说明
 

@@ -1,11 +1,15 @@
+param(
+  [string]$AudioFile = 'audio\neon-afterglow-synthwave.mp3',
+  [string]$OutputFile = 'output\neon-afterglow-mv.mp4'
+)
 $ErrorActionPreference = 'Stop'
 
 $Root = Split-Path -Parent $PSScriptRoot
 $Build = Join-Path $Root 'build'
 $Assets = Join-Path $Root 'assets'
-$Audio = Join-Path $Root 'audio\neon-afterglow-synthwave.mp3'
+$Audio = Join-Path $Root $AudioFile
 $OutputDir = Join-Path $Root 'output'
-$Output = Join-Path $OutputDir 'neon-afterglow-mv.mp4'
+$Output = Join-Path $Root $OutputFile
 
 New-Item -ItemType Directory -Force $Build, $OutputDir | Out-Null
 
